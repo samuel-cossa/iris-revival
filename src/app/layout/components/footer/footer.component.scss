@@ -1,28 +1,26 @@
 :host {
   footer {
     margin-top: 50px;
-    font-size: 14px;
-  }
-
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px currentColor !important;
-  }
-
-  footer .copyright {
-    text-align: center;
-  }
-
-  footer .credits {
-    text-align: center;
     font-size: 13px;
-  }
+    padding: 0px !important;
 
-  // footer .credits a {
-  //   color: var(--color-primary);
-  // }
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 30px;
+      border-top: 0.2px solid currentColor !important;
+      .copyright i {
+        color: linear-gradient(to right, #f82249, cornflowerblue) !important;
+      }
+
+      .credits {
+        text-align: center;
+        font-size: 13px;
+      }
+      .designer:hover {
+        color: var(--color-links);
+      }
+    }
+  }
 }

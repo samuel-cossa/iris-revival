@@ -1,13 +1,35 @@
 <footer id="footer" class="footer">
   <div class="container">
+    <hr class="active" />
+  </div>
+  <div class="container">
+    <div class="row gy-2 justify-content-center">
+      <div class="col-xl-4 col-lg-4 col-md-6 b">
+        <h3>Beginning content</h3>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 m">
+        <h3>Medium content</h3>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 l">
+        <h3>Lasting content</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
     <div class="content">
-      <div class="copyright text-body-tertiary">
-        &copy; <i class="bi-github"></i> <strong><span>redux</span></strong
-        >. {{ currentYear }}
+      <div class="copyright text-body">
+        &copy; <i class="bi-github active"></i>
+        <strong><span> Iris Revival Church</span></strong
+        >. {{ currentYear }} . All Rights Reserved
       </div>
       <div class="credits">
-        by
-        <a routerLink="https://github.io/samuel-cossa"><b>Samuel Cossa</b></a>
+        Designed by
+        <a [href]="['https://github.io/samuel-cossa']"
+          ><b class="designer text-body"
+            >Luz<span class="active">Informatica</span></b
+          ></a
+        >
       </div>
     </div>
   </div>
