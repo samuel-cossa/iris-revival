@@ -1,29 +1,8 @@
-<div class="container bg-body-secondary text-body">
-  <h1>Hello world, Im coding with angular</h1>
-  <hr />
-  <br />
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-    dignissimos recusandae distinctio adipisci modi nisi! Ab, commodi tenetur
-    quidem, consectetur laboriosam perspiciatis consequatur magnam, ad libero
-    quas excepturi quam harum. Cumque, numquam quam. Eveniet necessitatibus
-    dolorem omnis consequatur eligendi distinctio sit, officia esse? Debitis
-    aliquam aliquid non ea nihil nostrum laudantium repellat ratione, fugit
-    atque itaque voluptate pariatur asperiores. Omnis vero vitae nemo temporibus
-    sint perspiciatis reiciendis nihil officiis recusandae neque, cum voluptate
-    cumque maiores consequatur nostrum sit assumenda velit incidunt, ipsam eos
-    obcaecati. Nam suscipit mollitia corporis veniam, laudantium, nihil quam
-    temporibus libero nostrum, est culpa. Ea doloremque dolor impedit eum, nisi
-    aliquid corporis itaque, quasi nemo quidem maxime minima, magni dicta beatae
-    et adipisci. Reprehenderit esse, hic doloremque nobis assumenda eveniet
-    tenetur consequuntur explicabo vitae fugit ratione temporibus architecto
-    totam unde quod inventore enim ullam velit, aperiam excepturi libero? Saepe
-    ut quas minus est rem ex beatae rerum itaque deserunt! Perferendis,
-    voluptatibus numquam adipisci exercitationem quo aliquam blanditiis earum?
-    Culpa debitis nihil ut iste tempore placeat, odit labore suscipit alias
-    excepturi et adipisci sint sunt fugit sed voluptas assumenda magni. Non
-    sapiente ea exercitationem explicabo perferendis debitis inventore laborum,
-    cumque minima tenetur quam quasi excepturi recusandae et vitae!
-  </p>
+<div
+  [attr.data-bs-theme]="[darkLightModeService.colorModeSignal().color]"
+  class="app-root bg-body-tertiary text-body-secondary"
+>
+  <app-navbar />
   <router-outlet />
+  <app-footer />
 </div>
