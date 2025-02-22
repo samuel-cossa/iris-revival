@@ -142,9 +142,9 @@
     top: 0;
     right: -100%;
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.5s;
     z-index: 9997;
 
     ul {
@@ -201,7 +201,7 @@
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(6, 12, 34, 0.8);
+    background: rgba(216, 213, 8, 0.8);
     z-index: 9996;
   }
 }
