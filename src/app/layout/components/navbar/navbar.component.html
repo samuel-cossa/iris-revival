@@ -7,7 +7,7 @@
       <a [href]="['/']"> <i class="bi bi-house"></i><strong>Church</strong> </a>
     </h1>
     <nav class="navbar p-0 {{ show }}">
-      <ul class="bg-body-secondary text-body-emphasis">
+      <ul class="bg-body text-body-emphasis">
         <li
           [routerLinkActive]="['active']"
           onkeypress=""
@@ -28,7 +28,7 @@
           <a><app-toggle-modes /></a>
         </li>
       </ul>
-      <i class="toggle_menu bi {{ icon }}" (click)="toggle_menu()"></i>
+      <i class="toggle_menu tex-body bi {{ icon }}" (click)="toggle_menu()"></i>
     </nav>
 
     <div

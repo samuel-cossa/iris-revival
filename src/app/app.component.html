@@ -1,8 +1,12 @@
 <div
   [attr.data-bs-theme]="[darkLightModeService.colorModeSignal().color]"
   class="app-root bg-body-tertiary text-body-secondary"
+  data-aos="fade"
+  data-aos-delay="1500"
 >
-  <app-navbar />
+  <app-navigation />
+  <!-- <app-navbar /> -->
   <router-outlet />
   <app-footer />
+  <app-back-to-top />
 </div>

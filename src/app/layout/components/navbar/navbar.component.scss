@@ -53,7 +53,7 @@
 
   header:hover {
     transition: ease-in-out 0.5s;
-    box-shadow: 0 0 2px currentColor !important;
+    box-shadow: 0 0 3px currentColor !important;
     z-index: 1;
   }
 
@@ -62,11 +62,11 @@
   }
 
   .active {
-    font-weight: 600;
+    font-weight: 700;
 
-    a {
-      color: var(--color-links);
-    }
+    // a {
+    //   color: var(--color-links);
+    // }
   }
 
   @media (max-width: 575px) {
@@ -175,6 +175,19 @@
           margin-left: 5px;
         }
       }
+      a:hover,
+      .active {
+        background: linear-gradient(
+          to right,
+          #f82249,
+          #f82249,
+          rgb(224, 224, 3),
+          cornflowerblue,
+          cornflowerblue
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 
@@ -188,7 +201,7 @@
 
   .show .toggle_menu {
     cursor: pointer;
-    font-size: 32px;
+    font-size: 40px;
     line-height: 0;
     transition: 0.5s;
     position: absolute;
@@ -201,7 +214,8 @@
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(216, 213, 8, 0.8);
+    background: rgba(6, 12, 34, 0.8);
+    transition: 0.5s;
     z-index: 9996;
   }
 }
@@ -209,6 +223,6 @@
 .header_change {
   height: 60px !important;
   transition: ease-in-out 0.7s;
-  box-shadow: 0 0 2px currentColor !important;
+  box-shadow: 0 0 3px currentColor !important;
   z-index: 1;
 }

@@ -1,10 +1,28 @@
 :host {
-  .bi {
-    transition: 0.5s;
-    font-size: 24px;
+  footer {
+    margin-top: 50px;
+    font-size: 14px;
   }
 
-  .bi:hover {
-    color: #f82249;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px currentColor !important;
   }
+
+  footer .copyright {
+    text-align: center;
+  }
+
+  footer .credits {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  // footer .credits a {
+  //   color: var(--color-primary);
+  // }
 }

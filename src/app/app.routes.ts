@@ -23,6 +23,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/contact/contact.component').then((page) => page.ContactComponent)
   },
   {
+    path: 'posts',
+    loadComponent: () => import('./pages/posts/posts.component').then((page) => page.PostsComponent)
+  },
+  {
     path: '**',
     loadComponent: () => import('./pages/not-found/not-found.component').then((page) => page.NotFoundComponent)
   }

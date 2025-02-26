@@ -1,0 +1,40 @@
+<header
+  [class.header_change]="header_var"
+  class="bg-body-tertiary text-body-tertiary fixed-top"
+>
+  <div
+    class="container-fluid d-flex align-items-center justify-content-between"
+  >
+    <h1 class="logo">
+      <a class="text-body" [href]="['/']"> <i class="bi bi-bluetooth"></i>bp</a>
+    </h1>
+    <nav class="navbar p-0 {{ show }}">
+      <ul class="bg-body-tertiary text-body-tertiary">
+        <li [routerLinkActive]="['active']">
+          <a [routerLink]="['home']">Home</a>
+        </li>
+        <li [routerLinkActive]="['active']">
+          <a [routerLink]="['about']">About</a>
+        </li>
+        <li [routerLinkActive]="['active']">
+          <a [routerLink]="['blog']">Blog</a>
+        </li>
+        <li [routerLinkActive]="['active']">
+          <a [routerLink]="['posts']">Posts</a>
+        </li>
+        <li [routerLinkActive]="['active']">
+          <a [routerLink]="['contact']">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="social-links d-flex gap-3 justify-content-center align-items-center"
+    >
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-reddit"></i></a>
+      <a href="#"><i class="bi bi-telegram"></i></a>
+      <a class="text-body-secondary"><app-toggle-modes /></a>
+    </div>
+    <i class="toggle_menu bi bi-list" (click)="toggle_menu()"></i>
+  </div>
+</header>
