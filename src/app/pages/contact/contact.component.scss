@@ -8,8 +8,8 @@
 
   .contact .info-item i {
     font-size: 20px;
-    background: var(--color-primary);
     color: #fff;
+    background-color: inherit;
     width: 44px;
     height: 44px;
     display: flex;
@@ -25,7 +25,6 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: var(--color-secondary);
   }
 
   .contact .info-item p {
@@ -37,7 +36,6 @@
 
   .contact .php-email-form {
     width: 100%;
-    background: #fff;
   }
 
   .contact .php-email-form .form-group {
@@ -59,8 +57,6 @@
 
   .contact .php-email-form .sent-message {
     display: none;
-    color: #fff;
-    background: #059652;
     text-align: center;
     padding: 15px;
     font-weight: 600;
@@ -68,7 +64,6 @@
 
   .contact .php-email-form .loading {
     display: none;
-    background: #fff;
     text-align: center;
     padding: 15px;
   }
@@ -80,8 +75,6 @@
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid #059652;
-    border-top-color: #fff;
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
   }
