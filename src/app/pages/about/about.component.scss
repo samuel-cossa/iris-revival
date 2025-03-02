@@ -1,10 +1,72 @@
 :host {
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: var(--font-secondary);
+    color: #001f8d;
+  }
+
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .about .content ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+
+  .about .content ul i {
+    flex-shrink: 0;
+    font-size: 48px;
+    color: var(--color-primary);
+    margin-right: 20px;
+    line-height: 0;
+  }
+
+  .about .content ul h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #19335c;
+  }
+
+  .about .content ul p {
+    font-size: 15px;
+  }
+
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  @-webkit-keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
   /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
   #hero {
     width: 100%;
-    height: calc(100vh - 60px);
     background-size: cover;
     overflow: hidden;
     background-attachment: fixed;
@@ -18,7 +80,7 @@
   }
 
   #hero:before {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     top: 0;
     left: 0;
@@ -26,7 +88,7 @@
   }
 
   #hero .hero-container {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     top: 90px;
@@ -144,9 +206,9 @@
     border-radius: 0;
   }
 
-  #hero .about-btn {
+  .back-home-btn {
     font-family: "Raleway", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
     display: inline-block;
@@ -155,15 +217,15 @@
     transition: 0.5s;
     line-height: 1;
     margin: 10px;
-    color: var(--color-default);
+    text-transform: uppercase;
+    width: fit-content !important;
+    color: currentColor !important;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
-    border: 2px solid #f82249;
+    border: 1px solid #f82249;
   }
-
-  #hero .about-btn:hover {
-    background: #f82249;
-    color: #fff !important;
+  .back-home-btn:hover {
+    color: linear-gradient(to right, #f82249, cornflowerblue);
   }
 
   @-webkit-keyframes pulsate-btn {

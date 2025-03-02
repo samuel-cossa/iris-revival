@@ -1,4 +1,4 @@
-import { Component, HostListener, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { DarkLightModeService } from './shared/services/dark-light.mode.service';
 import { NavbarComponent } from './layout/components/navbar/navbar.component';

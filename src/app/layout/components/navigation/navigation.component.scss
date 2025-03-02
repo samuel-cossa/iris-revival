@@ -28,22 +28,18 @@
 
     .active {
       font-weight: 600;
-
-      a {
-        color: var(--color-links);
-      }
     }
 
     .social-links {
       padding-right: 15px;
 
       a {
-        transition: 0.5s;
+        transition: 0.7s;
         font-size: 18px;
       }
 
       a:hover {
-        color: #f82249;
+        font-size: 16px;
       }
     }
   }
@@ -119,40 +115,30 @@
     nav {
       position: fixed;
       padding: 0;
-      top: 63px !important;
+      top: 62px !important;
       right: -100%;
       width: 100%;
-      max-width: 480px;
+      max-width: 520px;
       bottom: 0;
       transition: 0.5s;
       z-index: 9997;
       ul {
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center !important;
-        // justify-content: center !important;
-        // gap: 2rem;
-        // height: 100%;
-        // width: 100%;
-        // transition: 0.3s;
-        // box-shadow: 2px 2px 2px currentColor !important;
-        // z-index: 9998;
         position: absolute;
         inset: 0;
         padding: 50px;
         margin: 0;
         overflow-y: auto;
-        transition: 0.3s;
+        transition: 0.5s;
         z-index: 9998;
         li {
           margin-bottom: 15px !important;
         }
         a {
           font-family: var(--font-primary);
-          font-size: 18px;
+          font-size: 24px;
           text-transform: uppercase;
           letter-spacing: 1px;
-          font-weight: 700 !important;
+          font-weight: 100 !important;
           white-space: nowrap;
           transition: 0.3s;
         }

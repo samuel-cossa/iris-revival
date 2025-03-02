@@ -9,64 +9,43 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-    }
-
-    .item {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      margin: 0;
+      .item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        .img {
+          text-align: center;
+        }
+      }
     }
 
     .container .animated {
       -webkit-animation: none;
       animation: none;
     }
-
-    .container .img {
-      text-align: center;
-    }
-
-    .container .img {
-      width: 50%;
-    }
   }
 
   @media (max-width: 768px) {
-    .container h1 {
-      font-size: 28px;
-      line-height: 36px;
-    }
-
-    .container .desc {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
-    }
-
-    .container .img {
-      width: 70%;
+    .container {
+      h1 {
+        font-size: 48px;
+        line-height: 56px;
+      }
+      .desc {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
     }
   }
 
   @media (max-width: 575px) {
-    .container .img {
-      width: 80%;
-    }
-
-    .container .btn-get-started {
-      font-size: 16px;
-      padding: 10px 24px 11px 24px;
-    }
-  }
-
-  @-webkit-keyframes up-down {
-    0% {
-      transform: translateY(10px);
-    }
-
-    100% {
-      transform: translateY(-10px);
+    .container {
+      .btn-get-started {
+        font-size: 16px;
+        padding: 10px 24px 11px 24px;
+      }
     }
   }
 
@@ -80,41 +59,55 @@
     }
   }
 
-  /* ---------------
-  ==========================
-  ====================================== */
-
   .container {
     height: 100vh;
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 20px;
     width: 100%;
-  }
-
-  .item {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    width: 100%;
-  }
-
-  .title {
-    font-size: 56px;
-    background: linear-gradient(to bottom, #f82249, cornflowerblue);
-    -webkit-background-clip: text;
-    // background-clip: initial;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600 !important;
-  }
-
-  .img {
-    position: inherit;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    animation: move 1s infinite ease alternate;
+    .item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      .title {
+        font-size: 56px;
+        background: linear-gradient(to bottom, #f82249, cornflowerblue);
+        -webkit-background-clip: text;
+        background-clip: none;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600 !important;
+      }
+      .img {
+        position: inherit;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        animation: move 1s infinite ease alternate;
+      }
+      .back-home-btn {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 32px;
+        border-radius: 50px;
+        transition: 0.5s;
+        line-height: 1;
+        margin: 5px;
+        text-transform: uppercase;
+        width: fit-content !important;
+        color: currentColor !important;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        border: 3px solid #f82249;
+      }
+      .back-home-btn:hover {
+        color: linear-gradient(to right, #f82249, cornflowerblue);
+      }
+    }
   }
 
   @keyframes move {
@@ -125,27 +118,5 @@
     to {
       transform: translateY(4px);
     }
-  }
-
-  .back-home-btn {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 32px;
-    border-radius: 50px;
-    transition: 0.5s;
-    line-height: 1;
-    margin: 10px;
-    text-transform: uppercase;
-    width: fit-content !important;
-    color: currentColor !important;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    border: 1px solid #f82249;
-  }
-  .back-home-btn:hover {
-    color: linear-gradient(to right, #f82249, cornflowerblue);
   }
 }

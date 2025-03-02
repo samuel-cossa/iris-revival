@@ -15,10 +15,9 @@
   -moz-osx-font-smoothing: grayscale;
   --color-links: #f82249;
   --color-primary: #ef084d;
-  --color-links-hover: var(--color-primary);
+  --color-links-hover: linear-gradient(to right, #f82249, cornflowerblue);
 
   --color-default: #0a0d13;
-  // --color-primary: #0d42ff;
   --color-secondary: #0e1d34;
 }
 
@@ -52,6 +51,8 @@ a:hover,
 
 section {
   min-height: 100vh !important;
+  padding-top: 80px;
+  overflow: hidden;
 }
 
 h1,
@@ -61,7 +62,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-default);
-  // font-weight: 100 !important;
+  font-weight: 100 !important;
 }
 
 .btn {
