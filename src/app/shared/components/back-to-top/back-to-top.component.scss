@@ -3,20 +3,21 @@
     position: fixed;
     visibility: hidden;
     opacity: 0;
-    right: 25px;
-    bottom: 20px;
-    z-index: 996;
+    right: 15px;
+    bottom: 5px;
+    z-index: 99999;
+    background: inherit;
     width: 35px;
     height: 35px;
     border-radius: 50px;
     transition: all 0.4s;
-    box-shadow: 0 0 1px currentColor !important;
+    box-shadow: 0 0 3px currentColor !important;
+    cursor: pointer;
   }
 
   .back-to-top i {
     font-size: 24px;
     line-height: 0;
-    color: inherit !important;
   }
 
   .back-to-top.active {
