@@ -1,14 +1,88 @@
 :host {
   footer {
     margin-top: 50px;
-    font-size: 13px;
+    font-size: 14px;
     padding: 0px !important;
+
+    .footer-info .logo {
+      line-height: 0;
+      margin-bottom: 25px;
+      color: inherit;
+    }
+
+    .footer-info .logo img {
+      max-height: 40px;
+      margin-right: 6px;
+    }
+
+    .footer-info .logo span {
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .footer-info p {
+      font-size: 14px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid currentColor !important;
+      font-size: 18px;
+      margin-right: 10px;
+      transition: 0.3s;
+      color: inherit;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+      padding-bottom: 12px;
+    }
+
+    .footer-links {
+      margin-bottom: 30px;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        i {
+          font-size: 18px;
+          line-height: 0;
+        }
+        li {
+          display: flex;
+          align-items: center;
+        }
+        li:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+
+    .footer-links ul a {
+      transition: 0.3s;
+      display: inline-block;
+      font-size: 24px;
+      color: inherit !important;
+    }
+
+    .footer-contact p {
+      line-height: 26px;
+      font-size: 24px;
+    }
 
     .content {
       display: flex;
       align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
       justify-content: space-between;
-      height: 30px;
       border-top: 0.2px solid currentColor !important;
       .copyright i {
         color: linear-gradient(to right, #f82249, cornflowerblue) !important;
@@ -16,10 +90,21 @@
 
       .credits {
         text-align: center;
-        font-size: 13px;
+        font-size: 14px;
+        i {
+          padding-left: 5px;
+        }
       }
       .designer:hover {
         color: var(--color-links);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
       }
     }
   }

@@ -1,66 +1,53 @@
-<footer id="footer" class="footer">
-  <div class="container my-5">
+<footer id="footer" class="footer text-body">
+  <div class="container mt-5">
     <hr class="active" />
   </div>
   <div class="container my-5">
-    <div class="row gy-2 justify-content-center">
-      <div class="col-xl-4 col-lg-4 col-md-6 b">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-          </li>
+    <div class="row gy-2 justify-content-center align-items-center">
+      <div
+        class="col-xl-4 col-lg-4 col-md-6 mb-5 footer-info d-flex flex-column justify-content-center align-items-center"
+      >
+        <a
+          [routerLink]="['home']"
+          class="logo mb-5 d-flex align-items-center text-center text-md-start"
+        >
+          <span>Iris Revival Church</span>
+        </a>
+        <p>
+          Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada
+          terra videa magna derita valies darta donna mare fermentum iaculis eu
+          non diam phasellus.
+        </p>
+        <div class="social-links d-flex mt-4">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-telegram"></i></a>
+        </div>
+      </div>
+      <div
+        class="col-xl-4 col-lg-4 col-md-6 footer-links d-flex flex-column justify-content-center align-items-center"
+      >
+        <h2>Our Services</h2>
+        <ul class="text-body-secondary">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Product Management</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Graphic Design</a></li>
         </ul>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-6 m">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-xl-4 col-lg-4 col-md-6 l">
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of what's new and exciting from us.</p>
-          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden"
-              >Email address</label
-            >
-            <input
-              id="newsletter1"
-              type="text"
-              class="form-control"
-              placeholder="Email address"
-            />
-            <button class="btn btn-primary" type="button">Subscribe</button>
-          </div>
-        </form>
+      <div
+        class="col-xl-4 col-lg-4 col-md-6 footer-contact text-center text-md-start"
+      >
+        <h2>Contact Us</h2>
+        <p>
+          A108 Adam Street <br />
+          New York, NY 535022<br />
+          United States <br /><br />
+          <strong>Phone:</strong> +1 5589 55488 55<br />
+          <strong>Email:</strong> {{ "info@example.com" }}<br />
+        </p>
       </div>
     </div>
   </div>
@@ -68,17 +55,16 @@
   <div class="container">
     <div class="content">
       <div class="copyright text-body">
-        &copy; <i class="bi-github active"></i>
-        <strong><span> Iris Revival Church</span></strong
-        >. {{ currentYear }} . All Rights Reserved
+        &copy; Copyright <strong><span>Iris</span></strong
+        >. All Rights Reserved
       </div>
       <div class="credits">
         Designed by
-        <a [href]="['https://github.io/samuel-cossa']"
+        <a [href]="['https://samuel-cossa/github.io']"
           ><b class="designer text-body"
             >Luz<span class="active">Informatica</span></b
-          ></a
-        >
+          ><i class="bi bi-github"></i
+        ></a>
       </div>
     </div>
   </div>
